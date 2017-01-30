@@ -1,12 +1,23 @@
-#include<iostream.h>
+#include<stdio.h>
 #include<conio.h>
 #include<graphics.h>
 #include<dos.h>
 #include<stdlib.h>
-void main()
-{
+void table();
+void information();
 int gd=DETECT,gm,i;
 char b;
+void main()
+{
+table();
+getch();
+cleardevice();
+information();
+getch();
+}
+
+void table()
+{
 initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
  settextstyle(0,EMPTY_FILL,5);
 setcolor(BLUE);
@@ -478,207 +489,208 @@ settextstyle(0,EMPTY_FILL,1);
 setcolor(GREEN);
 outtextxy(0,390,"Lanthanides");
 outtextxy(0,420,"Actinides");
-
-getch();
-cleardevice();
+}
+void information()
+{
 int a;
-cout<<"\n"<<"\t\t**********LONG FORM OF PERIODIC TABLE*********\t";
-cout<<"\n"<<"----------------------------------------------------------------------------";
-cout<<"\n"<<"\n"<<"1. TERMS RELATED TO PERIODIC TABLE";
-cout<<"\n"<<"----------------------------------------------------------------------------";
+printf("\n\t\t**********LONG FORM OF PERIODIC TABLE*********\t");
+printf("\"----------------------------------------------------------------------------");
+printf("\n1. TERMS RELATED TO PERIODIC TABLE");
+printf("\n----------------------------------------------------------------------------");
 
 clrscr();
+printf("\n           **********TERMS RELATED TO THE PERIODIC TABLE**********");
+printf("\n-------------------------------------------------------------------------------");
+printf("\n 1.  Periodic tab      \t\t\t\t 2.  Element");
+printf("\n 3.  Atom              \t\t\t\t 4.  Nucleus");
+printf("\n 5.  Proton            \t\t\t\t 6.  Neutron");
+printf("\n 7.  Electron          \t\t\t\t 8.  Energy level");
+printf("\n 9.  Orbital           \t\t\t\t 10. Valence electron ");
+printf("\n 11. Periods           \t\t\t\t 12. Groups");
+printf("\n 13. Ionisation        \t\t\t\t 14. Cation");
+printf("\n 15. Anion             \t\t\t\t 16. Atomic no.");
+printf("\n 17. Mass no.          \t\t\t\t 18. Metal");
+printf("\n 19. Non-metal         \t\t\t\t 20. Metalloid");
+printf("\n 21. Alkali family     \t\t\t\t 22. Alkali earth metal");
+printf("\n 23. Calchogen         \t\t\t\t 24. Halogen");
+printf("\n 25. Noble gas         \t\t\t\t 26. Isotope");
+printf("\n 27. Lanthanide        \t\t\t\t 28. Actinides");
+printf("\n 29. Exit");
+printf("\n==============================================================================");
 do
 {
-cout<<"\n"<<"           **********TERMS RELATED TO THE PERIODIC TABLE**********";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
-cout<<"\n"<<"\n"<<" 1.  Periodic table "<<"\t\t\t\t"<<" 2.  Element";
-cout<<"\n"<<" 3.  Atom          "<<"\t\t\t\t"<<" 4.  Nucleus";
-cout<<"\n"<<" 5.  Proton        "<<"\t\t\t\t"<<" 6.  Neutron";
-cout<<"\n"<<" 7.  Electron      "<<"\t\t\t\t"<<" 8.  Energy level";
-cout<<"\n"<<" 9.  Orbital       "<<"\t\t\t\t"<<" 10. Valence electron ";
-cout<<"\n"<<" 11. Periods       "<<"\t\t\t\t"<<" 12. Groups";
-cout<<"\n"<<" 13. Ionisation    "<<"\t\t\t\t"<<" 14. Cation";
-cout<<"\n"<<" 15. Anion         "<<"\t\t\t\t"<<" 16. Atomic no.";
-cout<<"\n"<<" 17. Mass no.      "<<"\t\t\t\t"<<" 18. Metal";
-cout<<"\n"<<" 19. Non-metal     "<<"\t\t\t\t"<<" 20. Metalloid";
-cout<<"\n"<<" 21. Alkali family "<<"\t\t\t\t"<<" 22. Alkali earth metal";
-cout<<"\n"<<" 23. Calchogen     "<<"\t\t\t\t"<<" 24. Halogen";
-cout<<"\n"<<" 25. Noble gas     "<<"\t\t\t\t"<<" 26. Isotope";
-cout<<"\n"<<" 27. Lanthanide    "<<"\t\t\t\t"<<" 28. Actinides";
-cout<<"\n"<<" 29. Exit";
-cout<<"\n"<<"==============================================================================";
-cout<<"\n"<<"\n"<<"Enter your choice...  "  ;
-cin>>i;
+printf("\n\nEnter your choice...  " ) ;
+scanf("\n%d",&i);
 
 if(i==1)
 {
-cout<<"\n"<<"Periodic table => The periodic table is a tabular arrangment of the chemical";
-cout<<"\n"<<"                  elements, ordered by their atomic number, electron ";
-cout<<"\n"<<"                  configration and reoccuring chemical properties.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
-	   }
+printf("\nPeriodic table => The periodic table is a tabular arrangment of the chemical");
+printf("\n                  elements, ordered by their atomic number, electron ");
+printf("\n                  configration and reoccuring chemical properties.");
+printf("\n-------------------------------------------------------------------------------");
+}
 
-	    else if(i==2)
+ else if(i==2)
 	    {
-cout<<"\n"<<" Element => A fundamental substance that has a unique atomic number on the";
-cout<<"\n"<<"            periodic table. ";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Element => A fundamental substance that has a unique atomic number on the");
+printf("\n            periodic table. ");
+printf("\n-------------------------------------------------------------------------------");
  }
  else if(i==3)
  {
-cout<<"\n"<<" Atom => The smallest particle that has the properties of an element.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Atom => The smallest particle that has the properties of an element.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==4)
 {
-cout<<"\n"<<" Nucleus => The center of an atom; made up of protons and neutrons.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Nucleus => The center of an atom; made up of protons and neutrons.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==5)
 {
-cout<<"\n"<<" Proton => A positively charged subatomic particle in the nucleus ";
-cout<<"\n"<<"           of an atom.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Proton => A positively charged subatomic particle in the nucleus ");
+printf("\n           of an atom.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==6)
 {
-cout<<"\n"<<" Neutron => A neutral subatomic particle in the nucleus of an atom.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Neutron => A neutral subatomic particle in the nucleus of an atom.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==7)
 {
-cout<<"\n"<<" Electron => A negatively charged subatomic particle found in the energy";
-cout<<"\n"<<"             level of an atom.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Electron => A negatively charged subatomic particle found in the energy");
+printf("\n             level of an atom.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==8)
 {
-cout<<"\n"<<" Energy level => Any of the possible energies an electron may have in an";
-cout<<"\n"<<"                 atom.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Energy level => Any of the possible energies an electron may have in an");
+printf("\n                 atom.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==9)
 {
-cout<<"\n"<<" Orbital => A region in an atom where there is a high probability. "
-<<"\n"<<"of finding electrons.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Orbital => A region in an atom where there is a high probability. " );
+printf("\n            of finding electrons.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==10)
 {
-cout<<"\n"<<" Valance electron => An electron in an outermost energy level of an atom.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";}
+printf("\n Valance electron => An electron in an outermost energy level of an atom.");
+printf("\n-------------------------------------------------------------------------------");
+}
 else if(i==11)
 {
-cout<<"\n"<<" Periods => A horizontal row of element in the periodic table";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Periods => A horizontal row of element in the periodic table");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==12)
 {
-cout<<"\n"<<" Group => A vertical column of element in the periodic table";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Group => A vertical column of element in the periodic table");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==13)
 {
-cout<<"\n"<<" Ionization => The process of adding electrons to or removing electrons";
-cout<<"\n"<<"               from an atoms or group of atoms.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Ionization => The process of adding electrons to or removing electrons");
+printf("\n               from an atoms or group of atoms.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==14)
 {
-cout<<"\n"<<" Cations => An ion with positive(+ve) charge.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Cations => An ion with positive(+ve) charge.");
+printf("\n -------------------------------------------------------------------------------");
 }
 else if(i==15)
 {
-cout<<"\n"<<" Anion => An ion with negative(-ve) charge.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Anion => An ion with negative(-ve) charge.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==16)
 {
-cout<<"\n"<<" Atomic no. => The number of protons in the nucleus of an atom.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Atomic no. => The number of protons in the nucleus of an atom.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==17)
 {
-cout<<"\n"<<" Mass number => The total number of protons and neutrons in the nucleus";
-cout<<"\n"<<"                of an atom.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Mass number => The total number of protons and neutrons in the nucleus");
+printf("\n                of an atom.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==18)
 {
-cout<<"\n"<<" Metal => The elements that are good conductors of heat and electricity.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Metal => The elements that are good conductors of heat and electricity.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==19)
 {
-cout<<"\n"<<" Non-metal => The elements that are usually poor conductors of heat";
-cout<<"\n"<<"              and elecricity.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Non-metal => The elements that are usually poor conductors of heat");
+printf("\n              and elecricity.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==20)
 {
-cout<<"\n"<<" Metalloid => An element that has the properties of both metal and";
-cout<<"\n"<<"              non metal.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Metalloid => An element that has the properties of both metal and");
+printf("\n              non metal.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==21)
 {
-cout<<"\n"<<" Alkali family => Group 1 elements. (H,LI,NA,K,RB,CS,FR";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Alkali family => Group 1 elements. (H,LI,NA,K,RB,CS,FR");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==22)
 {
-cout<<"\n"<<" Alkaline earth metal family => Group 2 elements.";
-cout<<"\n"<<"                                (Be,Mg,Ca,Sr,Ba,Ra)";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Alkaline earth metal family => Group 2 elements.");
+printf("\n				(Be,Mg,Ca,Sr,Ba,Ra)");
+printf("-------------------------------------------------------------------------------");
 }
 else if(i==23)
 {
-cout<<"\n"<<" Chalcogen family => Group 16 elements.";
-cout<<"\n"<<"                     (C,Si,Ge,Sn,Pb,Uuq";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Chalcogen family => Group 16 elements.");
+printf("\n                     (C,Si,Ge,Sn,Pb,Uuq");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==24)
 {
-cout<<"\n"<<" Halogen family => Group 17 elements.";
-cout<<"\n"<<"                   (F,Cl,Br,I,At) ";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Halogen family => Group 17 elements.");
+printf("\n                   (F,Cl,Br,I,At) ");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==25)
 {
-cout<<"\n"<<" Noble gas family => Group 18 elements.";
-cout<<"\n"<<"                     (He,Ne,Ar,Kr,Xe,Rn";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Noble gas family => Group 18 elements.");
+printf("\n                     (He,Ne,Ar,Kr,Xe,Rn");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==26)
 {
-cout<<"\n"<<" Isotope => A different form of an element that varies by";
-cout<<"\n"<<"            number neutrons in the nucleus.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Isotope => A different form of an element that varies by");
+printf("\n             number neutrons in the nucleus.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==27)
 {
-cout<<"\n"<<" Lanthanide => Lanthanide are a family of 15 chemical elements";
-cout<<"\n"<<"              whose atomic numbers range from 57 to 71";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Lanthanide => Lanthanide are a family of 15 chemical elements");
+printf("\n               whose atomic numbers range from 57 to 71");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==28)
 {
-cout<<"\n"<<" Actinides => Actinides consists of a family of 14 elements that";
-cout<<"\n"<<"             range in atomic numbers from 89 to 103.";
-cout<<"\n"<<"-------------------------------------------------------------------------------";
+printf("\n Actinides => Actinides consists of a family of 14 elements that");
+printf("\n              range in atomic numbers from 89 to 103.");
+printf("\n-------------------------------------------------------------------------------");
 }
 else if(i==29)
 {
 exit(0);
-cout<<"\n"<<"-------------------------------------------------------------------------------";
-cout<<"\n"<<"invalid choice";
+printf("\n-------------------------------------------------------------------------------");
 }
-cout<<"\n\n"<<"Press 'O' or 'o' to continue...";
-cin>>b;
+else
+printf("\n invalid choice");
+printf("\n Press 'O' or 'o' to continue... or any key to exit...");
+scanf("%s",&b);
 }
-while(b=='o'&&b=='O');
-getch();
+while(b=='o'||b=='O');
 }
 
